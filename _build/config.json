@@ -1,0 +1,155 @@
+{
+  "name": "MX Template",
+  "lowCaseName": "mxt",
+  "description": "The building blocks for a MODX Theme.",
+  "author": "Wayne Roddy",
+  "version": "1.2.0",
+  "package": {
+    "elements": {
+      "templates": [
+        {
+          "name": "MX Template",
+          "file": "mx_template.template.tpl"
+        }
+      ],
+      "tvs": [
+        {
+          "caption": "Body Layout",
+          "name": "body_tpl",
+          "description": "Layout for the Main Body Section",
+          "type": "option",
+          "templates": ["MX Template"],
+          "inputOptionValues": "Blank==blank||Page==page||Sidebar==sidebar",
+          "defaultValue": "page",
+          "inputProperties": {
+            "allowBlank": 0,
+            "columns": 3
+          }
+        },
+        {
+          "caption": "Carousel Post IDs",
+          "name": "carousel_ids",
+          "description": "Comma Separated # or \"default\" or leave blank for No Carousel",
+          "templates": ["MX Template"],
+          "display": "string",
+          "outputProperties": {
+            "format": "Lower Case"
+          }
+        },
+        {
+          "caption": "Body Type",
+          "name": "content_tpl",
+          "description": "Is this a Page, Listing, or Gallery",
+          "type": "listbox",
+          "templates": ["MX Template"],
+          "inputOptionValues": "Page==page||Listing==listing||Gallery==gallery",
+          "defaultValue": "page",
+          "inputProperties": {
+            "allowBlank": 0
+          }
+        },
+        {
+          "caption": "Featured Post IDs",
+          "name": "fpost_ids",
+          "description": "Comma Separated # or \"default\" or leave blank",
+          "templates": ["MX Template"],
+          "display": "string",
+          "outputProperties": {
+            "format": "Lower Case"
+          }
+        },
+        {
+          "caption": "Show Banner Image",
+          "name": "hero_banner",
+          "description": "",
+          "type": "checkbox",
+          "inputOptionValues": "Yes==yes",
+          "templates": ["MX Template"],
+          "inputProperties": {
+            "allowBlank": 0,
+            "columns": 1
+          }
+        },
+        {
+          "caption": "Listing by Parent",
+          "name": "listbyparent",
+          "description": "List children of ID #",
+          "templates": ["MX Template"]
+        },
+        {
+          "caption": "Listing IDs",
+          "name": "listing_ids",
+          "description": "Comma Separated # or leave blank to show children",
+          "templates": ["MX Template"],
+          "display": "string",
+          "outputProperties": {
+            "format": "Lower Case"
+          }
+        },
+        {
+          "caption": "Page Icon",
+          "name": "page_icon",
+          "description": "Some layout features use icons",
+          "templates": ["MX Template"],
+          "type": "option",
+          "inputOptionValues": "Photo==fa-picture-o||Folder==fa-folder||Search==fa-search||Envelope==fa-envelope||Star==fa-star||Home==fa-home||Gear==fa-gear||List==fa-list-alt||User==fa-user||Tag==fa-tag||Camera==fa-camera",
+          "inputProperties": {
+            "allowBlank": 1,
+            "columns": 4
+          }
+        },
+        {
+          "caption": "Page Image",
+          "name": "page_img",
+          "description": "Default Page Image",
+          "templates": ["MX Template"],
+          "type": "image"
+        },
+        {
+          "caption": "Slider IDs",
+          "name": "slider_ids",
+          "description": "Comma Separated # or \"default\" or leave blank for No Slider",
+          "templates": ["MX Template"],
+          "display": "string",
+          "outputProperties": {
+            "format": "Lower Case"
+          }
+        }
+      ]
+    },
+    "systemSettings": [
+      {
+        "key": "theme",
+        "value": ""
+      },
+      {
+        "key": "default_slogan",
+        "value": "This is a MODX Theme website"
+      },
+      {
+        "key": "default_copyright",
+        "value": "©2015 MODX"
+      },
+      {
+        "key": "default_theme_img",
+        "value": ""
+      },
+      {
+        "key": "default_fposts",
+        "value": ""
+      },
+      {
+        "key": "default_carousel",
+        "value": ""
+      },
+      {
+        "key": "social_twitter",
+        "value": ""
+      },
+      {
+        "key": "social_facebook",
+        "value": ""
+      }
+    ]
+  }
+}

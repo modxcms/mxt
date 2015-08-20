@@ -1,0 +1,5 @@
+[[$mxt.[[*content_tpl]]_start_[[++mxt.theme]]]]
+[[$mxt.[[*content_tpl]]_header_[[++mxt.theme]]]]
+[[$mxt.[[*content_tpl]]_content_[[++mxt.theme]]]]
+[[$mxt.[[*content_tpl]]_footer_[[++mxt.theme]]]]
+[[$mxt.[[*content_tpl]]_end_[[++mxt.theme]]]]
