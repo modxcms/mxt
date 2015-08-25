@@ -39,10 +39,10 @@
         {
           "caption": "Body Type",
           "name": "content_tpl",
-          "description": "Is this a Page, Listing, or Gallery",
+          "description": "Is this a Page, Listing, Grid or Gallery",
           "type": "listbox",
           "templates": ["MX Template"],
-          "inputOptionValues": "Page==page||Listing==listing||Gallery==gallery",
+          "inputOptionValues": "Page==page||Listing==listing||Grid==grid||Gallery==gallery",
           "defaultValue": "page",
           "inputProperties": {
             "allowBlank": 0
@@ -89,7 +89,7 @@
         {
           "caption": "Page Icon",
           "name": "page_icon",
-          "description": "Some layout features use icons",
+          "description": "Some layout features use Font Awesome icons",
           "templates": ["MX Template"],
           "type": "option",
           "inputOptionValues": "Photo==fa-picture-o||Folder==fa-folder||Search==fa-search||Envelope==fa-envelope||Star==fa-star||Home==fa-home||Gear==fa-gear||List==fa-list-alt||User==fa-user||Tag==fa-tag||Camera==fa-camera",
