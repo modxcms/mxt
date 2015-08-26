@@ -3,7 +3,7 @@
   "lowCaseName": "mxt",
   "description": "The building blocks for a MODX Theme.",
   "author": "Wayne Roddy",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "package": {
     "elements": {
       "templates": [
@@ -155,5 +155,10 @@
         "value": ""
       }
     ]
+  },
+  "build": {
+    "readme": "docs/index.md",
+    "license": "docs/license.md",
+    "changelog": "docs/changelog.md"
   }
 }
