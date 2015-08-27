@@ -21,6 +21,7 @@
           "templates": ["MX Template"],
           "inputOptionValues": "Blank==blank||Page==page||Sidebar==sidebar",
           "defaultValue": "page",
+          "sortOrder": 1,
           "inputProperties": {
             "allowBlank": 0,
             "columns": 3
@@ -32,6 +33,7 @@
           "description": "Comma Separated # or \"default\" or leave blank for No Carousel",
           "templates": ["MX Template"],
           "display": "string",
+          "sortOrder": 6,
           "outputProperties": {
             "format": "Lower Case"
           }
@@ -44,6 +46,7 @@
           "templates": ["MX Template"],
           "inputOptionValues": "Page==page||Listing==listing||Grid==grid||Gallery==gallery",
           "defaultValue": "page",
+          "sortOrder": 0,
           "inputProperties": {
             "allowBlank": 0
           }
@@ -54,6 +57,7 @@
           "description": "Comma Separated # or \"default\" or leave blank",
           "templates": ["MX Template"],
           "display": "string",
+          "sortOrder": 7,
           "outputProperties": {
             "format": "Lower Case"
           }
@@ -65,6 +69,7 @@
           "type": "checkbox",
           "inputOptionValues": "Yes==yes",
           "templates": ["MX Template"],
+          "sortOrder": 4,
           "inputProperties": {
             "allowBlank": 1,
             "columns": 1
@@ -74,7 +79,8 @@
           "caption": "Listing by Parent",
           "name": "listbyparent",
           "description": "List children of ID #",
-          "templates": ["MX Template"]
+          "templates": ["MX Template"],
+          "sortOrder": 8
         },
         {
           "caption": "Listing IDs",
@@ -82,6 +88,7 @@
           "description": "Comma Separated # or leave blank to show children",
           "templates": ["MX Template"],
           "display": "string",
+          "sortOrder": 9,
           "outputProperties": {
             "format": "Lower Case"
           }
@@ -92,6 +99,7 @@
           "description": "Some layout features use Font Awesome icons",
           "templates": ["MX Template"],
           "type": "option",
+          "sortOrder": 3,
           "inputOptionValues": "Photo==fa-picture-o||Folder==fa-folder||Search==fa-search||Envelope==fa-envelope||Star==fa-star||Home==fa-home||Gear==fa-gear||List==fa-list-alt||User==fa-user||Tag==fa-tag||Camera==fa-camera",
           "inputProperties": {
             "allowBlank": 1,
@@ -103,7 +111,8 @@
           "name": "page_img",
           "description": "Default Page Image",
           "templates": ["MX Template"],
-          "type": "image"
+          "type": "image",
+          "sortOrder": 2
         },
         {
           "caption": "Slider IDs",
@@ -111,6 +120,7 @@
           "description": "Comma Separated # or \"default\" or leave blank for No Slider",
           "templates": ["MX Template"],
           "display": "string",
+          "sortOrder": 5,
           "outputProperties": {
             "format": "Lower Case"
           }
